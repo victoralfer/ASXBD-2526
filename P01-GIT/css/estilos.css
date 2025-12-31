@@ -189,3 +189,7 @@ ol {
 .subrayado {
 	text-decoration: underline;
 }
+
+.cursiva {
+	font-style: italic;
+}
