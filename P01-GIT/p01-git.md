@@ -59,7 +59,41 @@
 
 # **Clonado**
 
+<ol>
+  <li>Accedemos al programa Sourcetree</li>
+  <li>Pulsamos en: <span class="red">File > Clone/New</span></li>
+  <li>Copiamos el <span class="purple">código de enlace HTTPS</span> desde nuestra cuenta de GitHub</li>
+  <li>Pegamos el código en el campo <span class="green">Source Path / URL</span></li>
+  <li>Seleccionamos la <span class="green">ruta de destino en nuestro PC</span></li>
+  <li>Nombramos nuestro repositorio</li>
+  <li>Pulsamos en <span class="blue">Clone</span></li>
+</ol>
 
+<div class="imagenes">
+  <img src="img/clonado/clonado-1.png">
+</div>
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 4 ---------------->
+
+<h1>Clonado</h1>
+
+<!-- Imagen del IES Lois Peña Novo -->
+<div class="logo-ies">
+  <img src="img/logoies.jpg" alt="IES Lois Peña Novo">
+</div>
+
+
+<div class="imagenes margen-superior">
+  <img src="img/clonado/clonado-2.png">
+</div>
+
+<div class="imagenes">
+  <img src="img/clonado/clonado-3.png">
+</div>
 
 
 <!-- Salto de Página -->
@@ -67,7 +101,7 @@
 
 
 
-<!---------------- PÁGINA 4 ---------------->
+<!---------------- PÁGINA 5 ---------------->
 
 <!-- Imagen del IES Lois Peña Novo -->
 <div class="logo-ies">
@@ -82,7 +116,7 @@
 
 
 
-<!---------------- PÁGINA 5 ---------------->
+<!---------------- PÁGINA 6 ---------------->
 
 <!-- Imagen del IES Lois Peña Novo -->
 <div class="logo-ies">
