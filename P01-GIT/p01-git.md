@@ -41,8 +41,8 @@
 <!-- Contiene anclajes a los diferentes ejercicios (están en siguientes páginas) -->
 # **Índice**
 - [Proceso de Clonado](#clonado)
-- [Proceso de Descarga](#descarga-de-archivos)
 - [Proceso de Subida](#subida-de-archivos)
+- [Proceso de Descarga](#descarga-de-archivos)
 
 
 <!-- Salto de Página -->
@@ -111,21 +111,6 @@
   <img src="img/logoies.jpg" alt="IES Lois Peña Novo">
 </div>
 
-# **Descarga de Archivos**
-
-
-<!-- Salto de Página -->
-<div style="page-break-after: always;"></div>
-
-
-
-<!---------------- PÁGINA 6 ---------------->
-
-<!-- Imagen del IES Lois Peña Novo -->
-<div class="logo-ies">
-  <img src="img/logoies.jpg" alt="IES Lois Peña Novo">
-</div>
-
 
 # **Subida de Archivos**
 
@@ -151,7 +136,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 7 ---------------->
+<!---------------- PÁGINA 6 ---------------->
 
 <!-- Imagen del IES Lois Peña Novo -->
 <div class="logo-ies">
@@ -172,7 +157,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 8 ---------------->
+<!---------------- PÁGINA 7 ---------------->
 
 <!-- Imagen del IES Lois Peña Novo -->
 <div class="logo-ies">
@@ -193,7 +178,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 9 ---------------->
+<!---------------- PÁGINA 8 ---------------->
 
 <!-- Imagen del IES Lois Peña Novo -->
 <div class="logo-ies">
@@ -206,3 +191,19 @@
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-6.png">
 </div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 9 ---------------->
+
+<!-- Imagen del IES Lois Peña Novo -->
+<div class="logo-ies">
+  <img src="img/logoies.jpg" alt="IES Lois Peña Novo">
+</div>
+
+# **Descarga de Archivos**
+
+
