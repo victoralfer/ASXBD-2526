@@ -207,6 +207,40 @@
 # **Descarga de Archivos**
 
 <ol>
-
-
+  <li>Accedemos al programa Sourcetree. 
+    <ol>
+      <li>En la <span class="blue">parte inferior del programa</span> observamos a la derecha los nuevos ficheros o aquellos que han sufrido modificaciones; y a la izquierda los detalles de los cambios realizados en el repositorio y que aún no están alojados localmente.</li>
+      <li>En la <span class="blue">parte superior del programa</span> encontramos una serie de iconos con las acciones que podemos ejecutar <span class="cursiva">(Commit, Pull, Push, Fetch...)</span>.</li>
+      <li><span class="purple">Pulsamos en el icono 'Fetch'</span> para informarnos de las modificaciones o de los nuevos ficheros alojados en el repositorio.</li>
+    </ol>
+  </li>
+  <li>Si el respositorio cuenta con ficheros que podemos descargar localmente, <span class="green">el icono 'Pull' nos mostrará un número</span> <span class="cursiva">(indicativo del número de modifaciones 'Commits' realizadas)</span>. 
+    <ol>
+      <li>Si queremos descargar las modificaciones será necesario <span class="purple">pulsar en el icono 'Pull'</span>.</li>
+      <li>Posteriormente, en la ventana emergente, será necesario confimar la descarga <span class="purple">pulsando el botón 'Pull'</span>.</li>
+    </ol>
+  </li>
 </ol>
+
+<div class="imagenes margen-superior-restar">
+  <img src="img/descarga/descarga-1.png">
+</div>
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 10 ---------------->
+
+<!-- Imagen del IES Lois Peña Novo -->
+<div class="logo-ies">
+  <img src="img/logoies.jpg" alt="IES Lois Peña Novo">
+</div>
+
+
+<h1>Descarga de Archivos</h1>
+
+
+<div class="imagenes margen-superior">
+  <img src="img/descarga/descarga-2.png">
+</div>

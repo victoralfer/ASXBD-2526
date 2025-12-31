@@ -144,6 +144,7 @@ ol {
 
 
 
+/* CONTENEDORES CON IMÁGENES */
 .imagenes {
 	display: flex;
 	justify-content: center;
@@ -151,16 +152,16 @@ ol {
 
 
 
+/* --- AÑADIR / RESTAR MÁRGENES --- */
+
 .margen-superior {
 	margin-top: 50px;
 }
 
 
-
-
-
-
-
+.margen-superior-restar {
+	margin: -20px;
+}
 
 
 
