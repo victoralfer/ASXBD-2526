@@ -74,6 +74,7 @@
 
 <div class="imagenes">
   <img src="img/clonado/clonado-1.png">
+  <p class="num-romano">I</p>
 </div>
 
 <!-- Salto de Página -->
@@ -92,10 +93,12 @@
 
 <div class="imagenes margen-superior">
   <img src="img/clonado/clonado-2.png">
+  <p class="num-romano">II</p>
 </div>
 
 <div class="imagenes margen-superior">
   <img src="img/clonado/clonado-3.png">
+  <p class="num-romano">III</p>
 </div>
 
 
@@ -130,6 +133,7 @@
 
 <div class="imagenes">
   <img src="img/subida/subida-1.png">
+  <p class="num-romano">I</p>
 </div>
 
 <!-- Salto de Página -->
@@ -147,10 +151,12 @@
 
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-2.png">
+  <p class="num-romano">II</p>
 </div>
 
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-3.png">
+  <p class="num-romano">III</p>
 </div>
 
 <!-- Salto de Página -->
@@ -168,10 +174,12 @@
 
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-4.png">
+  <p class="num-romano">IV</p>
 </div>
 
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-5.png">
+  <p class="num-romano">V</p>
 </div>
 
 <!-- Salto de Página -->
@@ -190,6 +198,7 @@
 
 <div class="imagenes margen-superior">
   <img src="img/subida/subida-6.png">
+  <p class="num-romano">VI</p>
 </div>
 
 
@@ -224,6 +233,7 @@
 
 <div class="imagenes margen-superior-restar">
   <img src="img/descarga/descarga-1.png">
+  <p class="num-romano">I</p>
 </div>
 
 <!-- Salto de Página -->
@@ -243,4 +253,5 @@
 
 <div class="imagenes margen-superior">
   <img src="img/descarga/descarga-2.png">
+  <p class="num-romano">II</p>
 </div>

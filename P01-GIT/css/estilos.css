@@ -146,9 +146,29 @@ ol {
 
 /* CONTENEDORES CON IMÁGENES */
 .imagenes {
+	position: relative;
 	display: flex;
 	justify-content: center;
 }
+
+
+/* Números de las Imágenes */
+.num-romano {
+	width: 32px;
+	height: 32px;
+	background-color: rgba(29, 140, 219, 0.8);
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px black;
+	position: absolute;
+	top: 2px;
+	right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 
