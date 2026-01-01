@@ -69,7 +69,7 @@
 
 # **Instalación Tortoise-SVN**
 
-<p class="parrafo-normal">Lo primero que vamos a realizar es la <span class="green">Instalación de Tortoise-SVN tanto en el equipo anfitrión con en la máquina virtual. La máquina virtual tiene su tarjeta de red configurada en modo <span class="cursiva">Adaptador Puente</span>, lo que le permite conectarse con su propia dirección IP a la misma LAN que el ordenador anfitrión.</p>
+<p class="parrafo-normal">Lo primero que vamos a realizar es la <span class="green">Instalación de Tortoise-SVN tanto en el equipo anfitrión con en la máquina virtual</span>. La máquina virtual tiene su tarjeta de red configurada en modo <span class="cursiva">Adaptador Puente</span>, lo que le permite conectarse con su propia dirección IP a la misma LAN que el ordenador anfitrión.</p>
 
 #### **Configuración Tortoise-SVN** 
 
