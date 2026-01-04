@@ -1,0 +1,283 @@
+/*****************************************************/
+/*****************************************************/
+/****************** HOJA DE ESTILOS ******************/
+/*****************************************************/
+/*****************************************************/
+
+body {
+	font-family: calibri;
+}
+
+
+/* El contenedor con semántica header no se comporta como 
+el contenedor footer en markdown, por eso implemento el
+logo del centro en cada página deseada */
+
+/* La configuración markdown-pdf: Header Template no facilita
+la incorporación de imágenes desde la carpeta local */
+
+/* Contenedor Logo IES */
+.logo-ies {
+	width: 90px;
+	position: fixed;	/* Fija la posición de los logos en cada una de las páginas deseadas */
+	top: 0;
+	right: 20px;
+}
+
+	/* Imagen Logo IES */
+	.logo-ies img {
+		width: 100%;
+	}
+
+
+
+
+/* Sección Prácticas */
+#subapartados {
+	width: 80%;
+	height: 80vh;
+	padding: 5px 20px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	align-items: center;
+	background: linear-gradient(to right, rgba(227, 250, 233, 0.7), white);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+	/* Títulos Subapartados - Sección Prácticas */
+	.titulos-subapartados {
+		width: 100%;
+		margin: 50px 10px 20px 10px;
+		padding: 0 20px 0 20px;
+		font-size: 50px;
+		font-weight: bold;
+		color: green;
+	}
+
+	/* Textos Subapartados - Sección Prácticas */
+	.texto-subapartados {
+		width: 100%;
+		margin: 10px 10px 30px 10px;
+		padding: 0 20px 0 20px;
+		font-size: 30px;
+		font-weight: bold;
+		color: black;
+	}
+
+
+
+
+/* ----- Lista del Índice ----- */
+ul {
+	list-style: decimal;
+	padding: 10px 40px;
+	font-size: 20px;
+	color: blue;
+}
+
+	/* Elementos Lista del Índice */
+	li {
+		padding: 10px;
+	}
+
+		/* Subelementos Lista del Índice */
+		li li {
+			list-style: square;
+			padding: 5px;
+			font-style: italic;
+		}
+
+
+
+
+/* ----- ENCABEZADOS ----- */
+
+/* Títulos H1 (Títulos Principales #) */
+h1 {
+	margin: 5px;
+	padding: 5px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+/* Títulos H2 (Subtítulo ##) */
+h2 {
+	color: purple;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* Títulos H3 (Subapartados ###) */
+h3 {
+	font-style: italic;
+}
+
+
+/* Títulos H4 (Subapartados ####) */
+h4 {
+	margin: 0;
+	padding: 20px 20px 10px 20px;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+/* ----- PÁRRAFOS ----- */
+.parrafo-primero {
+	margin: 0;
+	padding: 20px 20px 10px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.parrafo-normal {
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+}
+
+
+
+
+/* ----- Lista Ordenada (Uso en ejercicios de las prácticas) ----- */
+
+/* Lista Ordenada NORMAL */
+ol {
+	list-style: upper-roman;
+	margin: 0;
+	padding: 15px 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Lista Ordenada PADDING-MARGEN especial */
+.ol-sin-padding-sup-inf {
+	list-style: upper-roman;
+	margin: 0;
+	padding: 0 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+	/* Elementos Lista Ordenada */
+	ol li {
+		padding: 10px;
+		text-align: justify;
+	}
+
+		/* Lista dentro de Elemento de Lista */
+		ol li ol {
+			list-style: circle;
+			margin: 0;
+			padding: 5px 50px 0 20px;
+		}
+
+			/* Subelementos Lista Ordenada */
+			ol li ol li {
+				padding: 5px;
+				text-align: justify;
+			}
+
+
+
+
+/* La inclusión de contenedores con semántica footer
+permite en Markdown que esta se implemente en todas las páginas */
+footer {
+	margin-bottom: -30px;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	font-size: 20px;
+	font-style: italic;
+	color: grey;
+}
+
+
+
+
+/* ----- CONTENEDORES CON IMÁGENES ----- */
+.imagenes {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+
+	/* Números de las Imágenes */
+	.num-romano {
+		width: 32px;
+		height: 32px;
+		background-color: rgba(29, 140, 219, 0.8);
+		color: white;
+		text-shadow: 2px 2px 3px black;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px black;
+		position: absolute;
+		top: 2px;
+		right: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+
+/* ----- AÑADIR / RESTAR MÁRGENES ----- */
+
+.margen-superior {
+	margin-top: 50px;
+}
+
+
+.margen-superior-restar {
+	margin: -20px;
+}
+
+
+
+
+/* ----- SPANs ----- */
+
+.red {
+	color: red;
+	font-style: italic;
+}
+
+.green {
+	color: green;
+	font-style: italic;
+}
+
+.blue {
+	color: blue;
+	font-style: italic;
+}
+
+.purple {
+	color: purple;
+	font-style: italic;
+}
+
+.subrayado {
+	text-decoration: underline;
+}
+
+.cursiva {
+	font-style: italic;
+}
