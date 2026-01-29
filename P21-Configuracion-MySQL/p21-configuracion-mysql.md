@@ -20,12 +20,13 @@
   <h3 class="titulos-subapartados">Práctica:</h3>
     <h3 class="texto-subapartados">P21-Configuración-MySQL</h3>
   <h3 class="titulos-subapartados">Fecha:</h3>
-    <h3 class="texto-subapartados">23 de Enero de 2026</h3>
+    <h3 class="texto-subapartados">24 de Enero de 2026</h3>
 </div>
 
 <footer>
   <h6>Víctor Álvarez Fernández - ASXBD - 2º ASIR</h6>
 </footer>
+
 
 <!-- Salto de Página -->
 <div style="page-break-after: always;"></div>
@@ -37,7 +38,7 @@
 <!-- Contiene anclajes a los diferentes ejercicios (están en siguientes páginas) -->
 # **Índice**
 
-<ul class="indice">
+<ol class="indice">
   <li><a href="#procesos">Procesos y Servicios</a>
     <ul>
       <li><a href="#cierre">Proceso de Cierre</a></li>
@@ -67,8 +68,51 @@
       <li><a href="#variablesestado">Variables de Estado</a></li>
     </ul>
   </li>
-  <li><a href="#parametrosdestacables">Configuración Parámetros Destacables</a></li>
+  <li><a href="#parametrosdestacables">Configuración Parámetros Destacables</a>
+    <ul>  
+      <li><a href="#espacio">Espacios de Almacenamiento</a>
+        <ul>
+          <li><a href="#myisam">MyISAM</a></li>
+          <li><a href="#merge">MERGE</a>
+          <li><a href="#memory">Memory</a>
+          <li><a href="#innodb">InnoDB</a>
+          <li><a href="#blackhole">Blackhole</a>
+          <li><a href="#otrosmotores">Otros Motores</a>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 3 ---------------->
+
+<!-- Contiene anclajes a los diferentes ejercicios (están en siguientes páginas) -->
+# **Índice**
+
+<ul style="list-style: none; margin-bottom: 0; padding-bottom: 0; margin-top: 5px; padding-top: 10px;">
+  <li>
+    <ul>
+      <li><a href="#confespacios">Configuracion Espacios</a></li>
+      <li><a href="#confinnodb">Configuracion InnoDB</a></li>
+      <li><a href="#confmyisam">Configuracion MyISAM</a></li>
+      <li><a href="#pordefecto">Definir Característica por Defecto</a></li>
+      <li><a href="#accesoremoto">Acceso Remoto</a></li>
+      <li><a href="#politica">Política de Contraseñas</a></li>
+    </ul>
+  </li>
 </ul>
+<ol class="indice" start="4" style="margin-top: 0; padding-top: 0;">
+  <li><a href="#diccionario">Estructura del Diccionario de Datos</a></li>
+  <li><a href="#ficheroslog">Ficheros Logs</a></li>
+  <li><a href="#documentacion">Documentación Configuración</a></li>
+  <li><a href="#resumen">Resumen Variables más Importantes</a></li>
+  <li><a href="#usuarios">Consulta de Usuarios y Privilegios</a></li>
+</ol>
 
 
 <!-- Salto de Página -->
@@ -76,10 +120,11 @@
 
 
 
-<!---------------- PÁGINA 3 ---------------->
+<!---------------- PÁGINA 4 ---------------->
 
 
 <h1 id="procesos">Procesos y Servicios SGBD</h1>
+
 
 <p class="parrafo-primero">Los procesos más importantes en un Sistema Gestor de Bases de Datos (SGBD) son los de inicio y cierre (parada).</p>
 
@@ -124,7 +169,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 4 ---------------->
+<!---------------- PÁGINA 5 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -167,7 +212,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 5 ---------------->
+<!---------------- PÁGINA 6 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -223,7 +268,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 6 ---------------->
+<!---------------- PÁGINA 7 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -264,7 +309,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 7 ---------------->
+<!---------------- PÁGINA 8 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -303,7 +348,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 8 ---------------->
+<!---------------- PÁGINA 9 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -343,7 +388,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 9 ---------------->
+<!---------------- PÁGINA 10 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -382,7 +427,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 10 ---------------->
+<!---------------- PÁGINA 11 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -411,7 +456,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 11 ---------------->
+<!---------------- PÁGINA 12 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -441,7 +486,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 12 ---------------->
+<!---------------- PÁGINA 13 ---------------->
 
 
 <h1>Procesos y Servicios SGBD</h1>
@@ -479,7 +524,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 13 ---------------->
+<!---------------- PÁGINA 14 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -489,7 +534,7 @@
 
 <h5>Orden de Comprobación para el Inicio del Servicio MySQL</h5>
 
-<ol class="ol-sin-romanos">
+<ol class="ol-sin-numero">
   <li><span class="purple">1º/ Variables de Entorno</span></li>
   <li><span class="purple">2º/ Fichero de Configuración de Opciones</span></li>
   <li><span class="purple">3º/ Línea de Comandos</span></li>
@@ -498,7 +543,7 @@
 
 <h5>Orden de Prioridad de los Métodos de Configuración</h5>
 
-<ol class="ol-sin-romanos">
+<ol class="ol-sin-numero">
   <li><span class="purple">1º/ Línea de Comandos</span></li>
   <li><span class="purple">2º/ Ficheros de Configuración de Opciones</span></li>
   <li><span class="purple">3º/ Variables de Entorno</span></li>
@@ -534,7 +579,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 14 ---------------->
+<!---------------- PÁGINA 15 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -583,7 +628,7 @@
 
 
 
-<!---------------- PÁGINA 15 ---------------->
+<!---------------- PÁGINA 16 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -617,7 +662,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 16 ---------------->
+<!---------------- PÁGINA 17 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -656,7 +701,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 17 ---------------->
+<!---------------- PÁGINA 18 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -690,13 +735,13 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 18 ---------------->
+<!---------------- PÁGINA 19 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
 
 
-<h4 id="modossql">Los Modos SQL del Servidor</h4>
+<h4 id="modossql">Modos SQL del Servidor</h4>
 
 <p class="parrafo-normal">Definen el tipo de sintaxis que debe usar el Servidor MySQL. Esta característica permite que MySQL se pueda usar en entornos diferentes. Es decir, puede hacer compatible MySQL con otros entornos.</p>
 
@@ -730,7 +775,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 19 ---------------->
+<!---------------- PÁGINA 20 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -774,7 +819,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 20 ---------------->
+<!---------------- PÁGINA 21 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -782,7 +827,7 @@
 
 <h5 class="margen-superior-interior">Orden de Lectura Variables Globales</h5>
 
-<ol class="ol-sin-romanos">
+<ol class="ol-sin-numero">
   <li><span class="purple">1º/ Valor por Defecto (Inicio del Servicio)</span></li>
   <li><span class="purple">2º/ Valor establecido en el fichero de configuración</span></li>
   <li><span class="purple">3º/ Valor introducido por Línea de Comandos</span></li>
@@ -791,7 +836,7 @@
 
 <h5>Prioridad Variables Globales</h5>
 
-<ol class="ol-sin-romanos">
+<ol class="ol-sin-numero">
   <li><span class="purple">1º/ Valor modificado con la orden SET GLOBAL</span></li>
   <li><span class="purple">2º/ Valor introducido por Línea de Comandos</span></li>
   <li><span class="purple">3º/ Valor establecido en el fichero de configuración</span></li>
@@ -801,7 +846,7 @@
 
 <h5 class="margen-superior-interior">Orden de Lectura Variables de Sesión</h5>
 
-<ol class="ol-sin-romanos">
+<ol class="ol-sin-numero">
   <li><span class="purple">1º/ Valor de la Variable Global</span></li>
   <li><span class="purple">2º/ Valor modificado con la orden SET SESSION</span></li>
 </ol>
@@ -832,7 +877,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 21 ---------------->
+<!---------------- PÁGINA 22 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -866,7 +911,7 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 22 ---------------->
+<!---------------- PÁGINA 23 ---------------->
 
 
 <h1 id="configuracion">Configuración del Servidor</h1>
@@ -887,8 +932,1107 @@
 <div style="page-break-after: always;"></div>
 
 
-<!---------------- PÁGINA 23 ---------------->
+<!---------------- PÁGINA 24 ---------------->
 
 
 <h1 id="parametrosdestacables">Configuración Parámetros Destacables</h1>
 
+
+<h4 id="espacio">Espacio de Almacenamiento</h4>
+
+<p class="parrafo-normal">Los Motores de Almacenamiento controlan la forma en la que se implemetan las tablas. MySQL permite almacenar tablas de distintos motores en la misma Base de Datos.</p>
+
+<p class="parrafo-normal">Orden <span class="blue">SHOW ENGINES \G</span>: Ver los Motores de Almacenamiento Disponibles. El campo "Support" nos indica si están o no habilitados.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/1-motores-disponibles.png">
+</div>
+
+
+<h5 id="myisam" class="h5-especial margen-superior-interior">Motor Almacenamiento MyISAM <span class="red">Uso desaconsejado en la actualidad</span></h5>
+
+<p class="parrafo-normal">Es una versión mejorada del Motor ISAM. MyISAM <span class="red">no permite transacciones, ni bloqueos menores a los realizados por una tabla completa</span>. Tampoco permite restricciones de clave foránea entre tablas.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Más eficiente con número elevado de lecturas</span></li>
+  <li><span class="purple">La Gestión de Almacenamiento se realiza con tres ficheros</span>:
+    <ol>
+      <li>Fichero de Datos (.MYD)</li>
+      <li>Fichero de Índices (.MYI)</li>
+      <li>Fichero de Metadatos (.SDI)</li>
+    </ol>
+  </li>
+  <li><span class="purple">Cada tabla va en un fichero</span>: el tamaño máximo de la tabla es el que permita el sistema de ficheros de la partición, así como el número máximo de filas lo marca la capacidad del disco duro</li>
+  <li><span class="purple">Opción de Reparación Automática <span class="brown">(--myisam-recover-options=BACKUP,FORCE)</span></span>: esta opción permite reparar tablas si encuentran fallos cuando se inicia el servicio, algo que puede retardar la puesta en marcha</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 25 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<ol class="ol-sin-romanos margen-superior-interior">
+  <li><span class="purple">Opciones de Reparación Manual</span>: 
+    <ol>
+      <li>Orden <span class="blue">CHECK TABLE;</span></li>
+      <li>Orden <span class="blue">REPAIR TABLE;</span></li>
+      <li><span class="green">Utilidad myisamchk</span></li>
+    </ol>
+  </li>
+  <li><span class="purple">Permite la inserción de filas mientras se realizan consultas de lectura</span></li>
+  <li><span class="purple">Permite indexación de texto completo (FULLTEXT)</span>
+    <ol>
+      <li>Tipos de Datos: CHAR, VARCHAR, TEXT y FULLTEXT</li>
+      <li>Límite 500 caracteres</li>
+      <li>No permite búsquedas con patrones (LIKE)</li>
+    </ol>  
+  </li>
+  <li><span class="purple">Escrituras retrasadas de clave DELAY_KEY_WRITE</span>
+    <ol>
+      <li>Los cambios de índices se almacenan en "buffer de índices"</li>
+      <li>Mejora rendimiento en tablas con muchos accesos</li>
+    </ol>  
+  </li>
+  <li><span class="purple">Compresión de Clave</span>: almacena valores de cadenas similares sucesivas</li>
+  <li><span class="purple">Opción Compresión de Tablas <span class="green">(Utilidad myisampack)</span></span>: las tablas se convierten en Sólo Lectura</li>
+  <li><span class="purple">Tiene más funciones para columnas AUTO_INCREMENT</span></li>
+</ol>
+
+
+<h5 id="merge" class="h5-especial margen-superior-interior">MRG_MyISAM (MERGE) <span class="red">Uso desaconsejado en la actualidad</span></h5>
+
+<p class="parrafo-normal">Agrupa varias tablas MyISAM en 'una tabla virtual'. La ventaja de este motor es que permite superar los límites en las tablas del motor MyISAM. Cabe destacar, que cuando se realiza una consulta a una tabla, esta actúa en toda la agrupación.</p>
+
+<p class="parrafo-normal"><span class="green">Ejemplo de Uso</span>: Registro de Datos de Acceso a una Página Web, donde la información crece de manera exponencial. 'MERGE' permite optar por la creación de tablas mensuales, medida que reducirá el almacenamiento y el tiempo en las consultas. Al estar las doce tablas agrupadas, se podrá realizar una estadística anual teniendo en cuenta todas y cada una de las tablas.</p>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 26 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 id="memory" class="h5-especial margen-superior-interior">MEMORY</h5>
+
+<p class="parrafo-normal">El motor MEMORY destaca por su alta velocidad al gestionar los datos directamente en la Memoria RAM, siendo útil para tablas de consulta rápida o almacenamiento temporal de datos no críticos.</p>
+
+<ol class="ol-sin-romanos">
+  <li>Las tablas se almacenan en la Memoria RAM</li>
+  <li>Las tablas se inician siempre limpias, porque residen en una memoria volátil</li>
+  <li>Las filas de datos son de longitud fija, según lo indicado por la definición del tipo de dato utilizado <span class="cursiva">(Ejemplo: Para una fila con tipo de dato VARCHAR(100), se reservan los 100 caracteres)</span></li>
+</ol>
+
+
+<h5 id="innodb" class="h5-especial margen-superior-interior">InnoDB</h5>
+
+<p class="parrafo-normal">El motor de almacenamiento InnoDB es el más utilizado en la actualidad y el que aporta un máximo rendimiento al permitir procesar gran número de datos.</p>
+
+<ol class="ol-sin-romanos">
+  <li>Permite búsquedas de texto con datos del tipo FULLTEXT</li>
+  <li>Es muy eficiente con operaciones de grabación elevadas ya que <span class="brown">los bloqueos se realizan a nivel de fila</span>, permitiendo mucha más concurrencia</li>
+  <li><span class="brown">Detecta automáticamente las Transacciones Sólo Lectura</span>:
+    <ol>
+      <li>Transacciones Lectura-Escritura: llevan asignada una ID</li>
+      <li>Transacciones Sólo Lectura: NO llevan asignada una ID</li>
+    </ol>
+  </li>
+</ol>
+
+
+<h5 class="margen-superior-interior">Estado de Transacciones Sólo Lectura</h5>
+
+<p class="parrafo-normal">InnoDB permite habilitar el estado de <span class="brown">"Transacciones Sólo Lectura"</span> para un Cliente, para ello se deben realizar los siguientes pasos:</p>
+
+<ol class="ol-numerico">
+  <li>Iniciar el estado 'Transacciones Sólo Lectura' con la orden: <span class="blue">START TRANSACTION READ ONLY;</span></li>
+  <li>Mientras dure este "paréntesis", se permitirán consultas, pero no creaciones ni inserciones de contenido</li>
+  <li>Finalizar el estado 'Transacciones Sólo Lectura' con la orden: <span class="blue">COMMIT;</span></li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 27 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<p class="parrafo-primero"><span class="green">Ejemplo "Transacciones Sólo Lectura"</span>: en las dos próximas imágenes se puede ver en el Cliente MySQL Workbench como al habilitar el estado de "Transacciones de Sólo Lectura", queda bloqueada la inserción de datos. Una vez cerrado este estado, la inserción vuelve a estar operativa.</p>
+
+<h5 align="center">Activación Transacciones Sólo Lectura</h5>
+
+<div class="imagenes">
+  <img src="img/parametros/2-transacciones-read-only-start.png">
+</div>
+
+<h5 align="center" class="margen-superior-interior">Desactivación Transacciones Sólo Lectura</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/3-transacciones-read-only-commit.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 28 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Almacenamiento en InnoDB (Tablespace)</h5>
+
+<p class="parrafo-normal">En el motor InnoDB las Tablas e Índices se almacenan en uno o varios conjuntos de archivos denominados "Tablespace" (TS), que el propio motor se encarga de gestionar.</p>
+
+<p class="parrafo-normal cursiva">Si en el equipo que actúa como servidor MySQL hay particiones de disco libres, estas se pueden destinar a este propósito.</p>
+
+<p class="parrafo-normal">En las <span class="red">versiones antiguas de MySQL</span>, todo el Servidor se almacenaba por defecto en una <span class="green">única Tablespace (TS)</span> que se encontraba ubicada en el directorio Data con el nombre <span class="green">ibdata1</span>: C:\ProgramData\MySQL\MySQL Server 8.0\Data\ibdata1. El tamaño inicial de este fichero es de 12 MB.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/4-almacenamiento-ts.png">
+</div>
+
+<p class="parrafo-normal margen-superior-interior">Las <span class="red">versiones más recientes de MySQL</span> tienen activada por defecto la opción <span class="brown">innodb_file_per_table (innodb_file_per_table = 1)</span>. Esta característica habilita la creación de <span class="green">una Tablaspace (TS) por cada tabla contenida en el Servidor MySQL</span>.</p>
+
+<ol class="ol-sin-romanos">
+  <li>El contenido se clasifica por Bases de Datos</li>
+  <li><span class="purple">Cada tabla tendrá su propio archivo con formato .ibd</span></li>
+  <li>El archivo <span class="purple">ibdata1</span> no dejará de existir, ya que <span class="purple">es el encargado de cohesionar todas las Tablaspace (TS)</span></li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 29 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<div class="imagenes margen-superior">
+  <img src="img/parametros/5-ts-organizacion-1.png">
+</div>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/6-ts-organizacion-2.png">
+</div>
+
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 30 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Estado Transacciones Seguras</h5>
+
+<p class="parrafo-normal">InnoDB permite habilitar el estado de <span class="brown">"Transacciones Seguras"</span> para que un cliente realice transacciones con la total tranquilidad de poder revertir los cambios en caso de error.</p>
+
+<ol class="ol-numerico">
+  <li>Iniciar el estado 'Transacciones Seguras' con la orden: <span class="blue">START TRANSACTION;</span></li>
+  <li>Mientras el estado esté activo, se podrán realizar creaciones e inserciones</li>
+  <li>Para finalizar este estado se deben confirmar las transacciones o deshacer los cambios:
+    <ol class="ol-circle">
+      <li>Deshacer cambios: <span class="blue">ROLLBACK;</span></li>
+      <li>Confirmar cambios: <span class="blue">COMMIT;</span></li>
+    </ol>
+  </li>
+</ol>
+
+<h5 align="center">Deshacer Cambios en Transacciones Seguras</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/7-transacciones-seguras-rollback.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 31 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 align="center" class="margen-superior-interior">Confirmar Cambios en Transacciones Seguras</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/8-transacciones-seguras-commit.png">
+</div>
+
+
+<h5 class="margen-superior-interior">InnoDB: Bloqueos Explícitos en Filas</h5>
+
+<p class="parrafo-normal">InnoDB permite asegurar resgistros específicos sin impedir que otros usuarios trabajen con el resto de la tabla, mientras se realiza una consulta en el ámbito transaccional.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Bloqueo Compartido (FOR SHARE)</span>: Permite que otros lean la fila, pero nadie puede modificarla.</li>
+  <li><span class="purple">Bloqueo Exclusivo (FOR UPDATE)</span>: Es un bloqueo total. Solo tú puedes leer y modificar esa fila. Los demás deben esperar a que tú termines (COMMIT o ROLLBACK) para poder acceder a ella.</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 32 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 align="center" class="margen-superior-interior">Bloqueo Compartido</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/9-bloqueo-compartido.png">
+</div>
+
+
+<h5 align="center" class="margen-superior-interior">Bloqueo Exclusivo</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/10-bloqueo-exclusivo.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 33 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">InnoDB: Claves Foráneas</h5>
+
+<p class="parrafo-normal">InnoDb permite las Claves Foráneas, que son columnas en una tabla "hija" que apuntan a la Clave Primaria de otra tabla "padre".</p>
+
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/11-clave-foranea.png">
+</div>
+
+
+
+<h5 class="margen-superior-interior">InnoDB: Acciones en Cascada</h5>
+
+<p class="parrafo-normal">Define qué debe pasar con los "hijos" cuando el "padre" cambia o desaparece. Se configuran con estas reglas:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">ON DELETE CASCADE</span>: Si borras al padre, MySQL borra automáticamente a todos sus hijos. Es ideal para limpiezas profundas</li>
+  <li><span class="purple">ON UPDATE CASCADE</span>: Si cambias el ID del padre, los IDs en las tablas hijas se actualizan solos para no perder la conexión</li>
+  <li><span class="purple">ON DELETE SET NULL</span>: Si borras al padre, los hijos se quedan, pero su columna de referencia se pone a NULL (quedan "huérfanos" pero no se borran)</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 34 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+
+<h5 align="center" class="margen-superior-interior">Inclusión de Acción en Cascada en Tabla "Hija"</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/12-cascada-muestra.png">
+
+
+<h5 align="center" class="margen-superior-interior">Inserción de Datos en Tablas "Padre" e "Hija"</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/13-insercion.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 35 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 align="center" class="margen-superior-interior">Eliminación Datos en Tabla "Padre"</h5>
+
+<p class="parrafo-normal">En la imagen se puede observar como al eliminar la categoría "5" de la tabla "categorias" (asociada a Alimentación), se han borrado los productos "Botella Agua 2L" y "Macarrones 1KG"; los cuales estaban vinculados con esa categoría.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/14-eliminar-cascada.png">
+</div>
+
+
+<h5 id="blackhole" class="h5-especial margen-superior-interior">BLACKHOLE</h5>
+
+<p class="parrafo-normal">El motor BLACKHOLE se utiliza en escenarios específicos de replicación y auditoría, donde es necesario capturar operaciones de escritura sin persistir los datos localmente. Este motor descarta la información almacenada, pero registra todas las operaciones en el binary log.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Servidor BLACKHOLE</span>: es el servidor MySQL que recibe las operaciones de escritura (INSERT, UPDATE, DELETE), pero no almacena los datos. Su función es generar eventos en el binary log que serán utilizados por otros servidores para reconstruir la información.</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 36 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<ol class="ol-sin-romanos margen-superior-interior">
+  <li><span class="purple">Servidor Real (InnoDB)</span>: replica desde el servidor BLACKHOLE y aplica los eventos del binary log, reconstruyendo los datos de forma persistente. Este servidor puede ser utilizado para consultas o como origen de nuevas réplicas.</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/15-blackhole.png">
+</div>
+
+
+<h5 class="h5-especial margen-superior-interior">Otros Motores de Almacenamiento</h5>
+
+<ol id="otrosmotores" class="ol-sin-romanos">
+  <li><span class="purple">FEDERATED</span>: NO está habilitado por defecto en MySQL <span class="brown">(--federated)</span>. Este motor permite accesos a tablas remotas que gestionan otros motores.</li>
+  <li><span class="purple">ARCHIVE</span>: almacena filas que se escriben una vez y nunca se modifican.</li>
+  <li><span class="purple">CSV</span>: valores separados por comas. Este motor almacena cada tabla en un fichero con extensión .csv. Cada fila de la tabla ocupa una línea dentro de los ficheros.</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 37 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h4 id="confespacios">Configuración de Espacios de Almacenamiento</h4>
+
+
+<h5 class="h5-especial">Directorio de Datos</h5>
+
+<p class="parrafo-normal">MySQL guarda las Bases de Datos que se crean en el proceso de instalación del Servidor y por supuesto, las que se crean a posteriori.</p>
+
+<p class="parrafo-normal">El directorio de almacenamiento se suele establecer en el proceso de instalación, aunque también se puede añadir/modificar posteriormente en la directiva <span class="purple">datadir</span> dentro del Fichero de Configuración.</p>
+
+
+<h5 id="confinnodb" class="h5-especial">Motor InnoDB</h5>
+
+<p class="parrafo-normal">Gestiona tres recursos: los Espacios para Tablas "Tablespace" (TS), la Caché y los Logs.</p>
+
+<p class="parrafo-normal">Los valores por defecto asociados a estos recursos son:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Espacios de Tablas (TS)</span>: 12 MB (autoextensible) - ibdata1</li>
+  <li><span class="purple">Ficheros Log</span>: 5 MB - ib_logfile0 - ib_logfile1</li>
+</ol>
+
+
+<h5 class="h5-especial margen-superior-interior">Configuración InnoDB (Fichero de Configuración)</h5>
+
+
+<h5>Espacio para Tablas Compartido</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_data_file_path</span>: define el nombre del fichero, el tamaño y los atributos de los Espacios para Tablas (TS).</p>
+
+<p class="parrafo-normal-sin-justificar">Configuración por defecto: <span class="brown">innodb_data_file_path = ibdata1:12M:autoextend</span></p>
+
+
+<h5>Espacio Temporal Global</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_temp_data_file_path</span>: define el nombre del fichero, el tamaño y los atributos del Espacio Temporal para las Tablas.</p>
+
+<p class="parrafo-normal">Configuración por defecto: <span class="brown">innodb_data_file_path = ibtmp1:12M:autoextend</span></p>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 38 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Tamaño de Página</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_page_size</span>: define el tamaño de las páginas (la unidad mínimo de lectura-escritura).</p>
+
+<p class="parrafo-normal">Configuración por defecto (16 KB): <span class="brown">innodb_page_size = 16384</span></p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">16 KB</span>: ideal para la mayoría de aplicaciones web</li>
+  <li><span class="purple">4-8 KB</span>: útil para cargas de trabajo con muchas escrituras pequeñas o ante la coincidencia con un tamaño de bloque del sistema de ficheros de la partición</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/18-pagina.png">
+</div>
+
+
+<h5>Tamaño de Caché</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_buffer_pool_size</span>: define el área de la memoria RAM donde InnoDB almacena en caché tanto los datos de las tablas como sus índices.</p>
+
+<p class="parrafo-normal">Configuración por defecto: <span class="brown">innodb_buffer_pool_size = 128M</span></p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Equipos con < 4GB RAM</span>: 50% del tamaño de la RAM</li>
+  <li><span class="purple">Equipos con 8-32 GB</span>: 50-70% del tamaño de la RAM</li>
+  <li><span class="purple">Equipos con más 32 GB</span>: 75% del tamaño de la RAM</li>
+</ol>
+
+<p class="parrafo-normal">En la configuración de mi servidor he optado por establecer un valor de 2 GB. Aunque la MV tiene 6 GB, al ser un laboratorio de pequeñas pruebas he entendido que es una cantidad más que suficiente (33% de la RAM).</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/16-cache-1.png">
+</div>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/17-cache-2.png">
+</div>
+
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 39 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Ficheros Log</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_log_files_in_group</span>: define el número de ficheros log que utilziará InnoDB.</p>
+
+<p class="parrafo-normal">Configuración por defecto: <span class="brown">innodb_log_files_in_group = 2</span></p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Tamaño del Buffer 1-8 GB</span>: 1 Fichero Log / GB</li>
+  <li><span class="purple">Tamaño del Buffer + 8 GB</span>: 0,75 Ficheros Log / GB</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/19-logs.png">
+</div>
+
+
+<h5 class="margen-superior-interior">Tamaño del Registro de Transacciones (Ficheros Log)</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_redo_log_capacity</span>: define el tamaño del registro de transaccines (de los ficheros log).</p>
+
+<p class="parrafo-normal">Configuración por defecto (100 MB): <span class="brown">innodb_redo_log_capacity = 100663296</span></p>
+
+<p class="parrafo-normal">Lo ideal es establecer un <span class="purple">25% del Tamaño del Buffer</span>.</p>
+
+<p class="parrafo-normal">En la configuración de mi servidor he optado por establecer un tamaño de 1000MB para los dos Ficheros Log con los que contará.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/20-tamaño-logs.png">
+</div>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/21-tamaño-logs-cambiado.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 40 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Ruta del Directorio de los Ficheros Log</h5>
+
+<p class="parrafo-normal"><span class="brown">innodb_log_group_home_dir</span>: define la ruta donde se almacenan los ficheros log.</p>
+
+<p class="parrafo-normal">Lo ideal es <span class="purple">establecer una ruta distinta (a poder ser en otro disco duro) para aumentar el rendimiento</span>.</p>
+
+<p class="parrafo-normal">En la configuración de mi servidor he optado por añadir un disco de 2 GB (recordamos que tenemos un máximo de 1000MB para los ficheros) y establecer ahí el directorio de los Ficheros Log.</p>
+
+<p class="parrafo-normal">También será necesario mover el directorio <span class="green"><#innodb_redo</span> (ubicado en C:\ProgramData\MySQL\MySQL Server 8.0\Data\) con su contenido a la nueva ubicación, ya que MySQL no lo hace automáticamente. Esta acción es fundamental para poder iniciar el servicio con la nueva configuración.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/22-ruta-logs.png">
+</div>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/23-ruta-logs-cambiada.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 41 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Ver Espacio Reutilizable</h5>
+
+<p class="parrafo-normal">Utilizando dentro de la Base de Datos deseada la orden <span class="blue">SHOW TABLE STATUS \G</span>, se obtiene información de interés sobre cada una de las tablas que contiene.</p>
+
+<p class="parrafo-normal">El campo <span class="cursiva">Data_free</span> nos indica el espacio reutilizable que tiene cada tabla.</p>
+
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/24-ver-espacio-reutilizable.png">
+</div>
+
+
+
+<h4 id="confmyisam" class="margen-superior-interior">Configuración MyISAM</h4>
+
+<p class="parrafo-normal">Aunque no se recomienda el uso de este motor de almacenamiento, haremos alguna apreciación sobre su configuración.</p>
+
+<p class="parrafo-normal">La gestión del almacenamiento se realiza con tres ficheros, aunque nos centraremos en los Ficheros de Datos (.MYD) y de Índices (.MYI).</p>
+
+<p class="parrafo-normal">Con respecto a la Caché, utiliza la del Sistema Operativo donde está instalado el Servidor MySQL.</p>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+
+<!---------------- PÁGINA 42 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Tamaño de Caché de Claves (Índices)</h5>
+
+<p class="parrafo-normal">La opción <span class="brown">key_buffer_size</span>, indica el espacio de memoria RAM que MySQL reserva para almacenar los índices de las tablas MyISAM. Se recomienda establecer una cantidad que no supere el 25% de la Memoria RAM.</p>
+
+<p class="parrafo-normal">Si el valor de key_buffer_size es el adecuado, el servidor mostrará valores muy próximos a 0 en las siguientes variables:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">key_reads</span>: Lectura de Disco</li>
+  <li><span class="purple">key_reads_request</span>: Solicitudes Lectura de Disco</li>
+  <li><span class="purple">key_write</span>: Escritura de Disco</li>
+  <li><span class="purple">key_write_request</span>: Solicitudes de Escritura de Disco</li>
+</ol>
+
+
+<h5>Tamaño de cada Bloque de la Caché</h5>
+
+<p class="parrafo-normal">La opción <span class="brown">key_cache_block_size</span>, es el tamaño de cada bloque de la caché. Por defecto esta cantidad es de 1024. Cuanto más grande sea el tamaño de los bloques, habrá menos desperdicio de caché de índices, pero se incrementará el número de bloques que no se leen, por eso es necesario equilibrarlo.</p>
+
+
+
+<h5>Cachés Diferenciadas</h5>
+
+<p class="parrafo-normal">Se considera una buena práctica crear una caché diferenciada para las tablas que tengan más uso. Cada caché se asociará a un conjunto de variables del sistema:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">key_buffer_size</span></li>
+  <li><span class="purple">key_cache_block_size</span></li>
+  <li><span class="purple">key_cache_limits</span></li>
+  <li><span class="purple">key_cache_threshold</span></li>
+</ol>
+
+<p class="parrafo-primero">En el Fichero de Configuración será necesario hacer referencia a esas nuevas cachés, asociándolas con las variables correspondientes. Simplemente con su mención y la asignación de un valor, las nuevas cachés estarán operativas.</p>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+
+<!---------------- PÁGINA 43 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<p class="parrafo-primero green">Ejemplo para la Caché de la Tabla prueba1:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">prueba1.key_buffer_size </span>= "valor"</li>
+  <li><span class="purple">prueba1.key_cache_block_size </span>= "valor"</li>
+  <li><span class="purple">prueba1.key_cache_limits </span>= "valor"</li>
+  <li><span class="purple">prueba1.key_cache_threshold </span>= "valor"</li>
+</ol>
+
+<p class="parrafo-normal">Las variables asociadas a la caché por defecto también se pueden mencionar con la misma sintaxis: <span class="purple">default.key_buffer_size</span>, aunque no es necesario.</p>
+
+
+<h5>Asignar una Tabla a una Caché</h5>
+
+<p class="parrafo-normal">Se realizaría en un Cliente MySQL con la orden: <span class="blue">CACHE INDEX tabla1, tabla2 IN prueba1;</span>.</p>
+
+
+<h4 id="pordefecto">Definición Características por Defecto de una Base de Datos</h4>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Quitar InnoDB como motor por defecto</span>: skip-innodb</li>
+  <li><span class="purple">Añadir motor por defecto</span>: store-engine = "motor"</li>
+  <li><span class="purple">Conjunto de Caracteres por defecto</span>: character_set_database = "conjunto"</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 44 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+
+<h4 id="accesoremoto">Configuración de Acceso Remoto SGBD</h4>
+
+<h5>Configuración en el Servidor</h5>
+
+<p class="parrafo-normal">Instalador MySQL Installer (Windows): será necesario activar la opción TCP/IP y el Puerto durante el proceso de instalación.</p>
+
+<p class="parrafo-normal">Fichero de Configuración (Windows y Linux): establecer la variable "port" y asignarle el valor del puerto deseado para la escucha. Es fundamental tener también comentada (#) la variable skip-networking.</p>
+
+
+
+<h5>Configuración Clientes en formato Consola</h5>
+
+<p class="parrafo-normal">Aunque ya se realizó en la práctica de instalación de MySQL, recordamos que para que un usuario puede acceder de manera remota habrá hacer una modifación en el host de acceso. Por defecto cuando se crea un usuario, este se crea para el servidor local (localhost).</p>
+
+<p class="parrafo-normal">En el ejemplo que se muestra a continucación se procede a crear un nuevo usuario denominado "remoto" y a modificar el usuario "estudiante". Las órdenes utilizadas serán:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Creación Nuevo Usuario</span>: <span class="blue">CREATE USER 'remoto'@'%' IDENTIFIED BY 'abc123.';</span></li>
+  <li><span class="purple">Modificación Usuario</span>: <span class="blue">ALTER USER 'estudiante'@'%' IDENTIFIED BY 'abc123.';</span></li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/25-acceso-remoto.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 45 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Configuración Cliente MySQL Workbench</h5>
+
+<p class="parrafo-normal">La configuración en MySQL Workbench es muy sencilla. En el campo Hostname será necesario colocar la Dirección IP donde está ubicado el equipo que contiene el Servidor MySQL Workbench, así como el puerto de escucha. También, pondremos el nombre del usuario con capacidad para acceder de manera remota.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/26-acceso-remoto-workbench.png">
+</div>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/27-acceso-remoto-workbench-2.png">
+</div>
+
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 46 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h5 class="margen-superior-interior">Establecimiento de Conexiones de Acceso desde la Consola</h5>
+
+<p class="parrafo-normal">Para acceder desde una consola se pueden utilizar diferentes opciones:</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Host del Servidor</span>: <span class="brown">--host / -h</span></li>
+  <li><span class="purple">Puerto de Acceso</span>: <span class="brown">--port -P</span></li>
+  <li><span class="purple">Contraseña</span>: <span class="brown">--password / -p</span></li>
+  <li><span class="purple">Usuario</span>: <span class="brown">--user / -u</span></li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/28-pruebas-accceso.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 47 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+<h4 id="politica">Política de Contraseñas</h4>
+
+
+<h5>Caducidad de la Contraseña</h5>
+
+<p class="parrafo-normal">En el Fichero de Configuración y a través de la opción <span class="brown">default-password-lifetime</span> se puede establecer una caducidad para las contraseñas de usuario. Si el valor es '0', estas nunca caducarán.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/30-variable-caducidad.png">
+</div>
+
+<p class="parrafo-normal">Además, desde un Cliente MySQL podemos asignar una caducidad a un usuario concreto con la orden: <span class="blue">ALTER USER 'usuario'@'host' PASSWORD EXPIRE INTERVAL 90 DAY;</span>.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/29-caducidad-contraseña.png">
+</div>
+
+
+<h5>Acceso con Contraseña Caducada</h5>
+
+<p class="parrafo-normal">En el Fichero de Configuración y a través de la opción <span class="brown">disconnect_on_expired_password</span> se puede permitir que un usuario se conecte cuando su contraseña está caducada. El objetivo es que la renueve tras su conexión.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Valor 0</span>: <span class="brown">Permite conexión</span></li>
+  <li><span class="purple">Valor 1</span>: <span class="brown">NO permite conexión</span></li>
+</ol>
+
+
+<h5>Reutilización de Contraseñas</h5>
+
+<p class="parrafo-normal">En el Fichero de Configuración y a través de la opción <span class="brown">password_history</span> se puede habilitar/deshabilitar la reutilización de contraseñas.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Valor 0</span>: <span class="brown">Permite repetir contraseñas</span></li>
+  <li><span class="purple">Valor 1</span>: <span class="brown">NO permite repetir contraseñas</span></li>
+</ol>
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 48 ---------------->
+
+
+<h1>Configuración Parámetros Destacables</h1>
+
+
+
+<h5 class="margen-superior-interior">Intervalo de días para poder Reutilizar la Contraseña</h5>
+
+<p class="parrafo-normal">En el Fichero de Configuración y a través de la opción <span class="brown">password_rescue_interval</span> se puede establecer el número de días que tienen que pasar para poder volver a usar una contraseña anterior.</p>
+
+
+<h5>Petición de Contraseña Actual para Establecer una Nueva Contraseña</h5>
+
+<p class="parrafo-normal">En el Fichero de Configuración y a través de la opción <span class="brown">password_require_current</span> se puede habilitar/deshabilitar la petición de la contraseña actual para establcer una nueva.</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Valor OFF</span>: <span class="brown">Desactivado</span></li>
+  <li><span class="purple">Valor ON</span>: <span class="brown">Ativado</span></li>
+</ol>
+
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/31-politica-contraseñas.png">
+</div>
+
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/parametros/32-politica-contraseñas-variables.png">
+</div>
+
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 49 ---------------->
+
+
+<h1 id="diccionario">Estructura del Diccionario de Datos</h1>
+
+<p class="parrafo-primero">Los Metadatos muestran la informacion de los datos almacenados en el Servidor MySQL <span class="cursiva">(nombres de las Bases de Datos, nombres de las Tablas, Tipos de Datos, Permisos de Accceso, ...)</span>.</p>
+
+<p class="parrafo-normal">Toda esta información se puede ver a través de las múltiples posibilidades de la orden <span class="blue">SHOW</span>, pero también se puede acceder a ella cosultando la <span class="darkblue">Bases de Datos INFORMATION_SCHEMA</span>.</p>
+
+
+<h4>Base de Datos INFORMATION_SCHEMA</h4>
+
+<p class="parrafo-normal">Está constituida con acceso de Sólo Lectura (Consultas), autorizando de esta manera que los usuarios de la Base de Datos tengan acceso sólamente a las filas permitidas.</p>
+
+
+<h5>Ventajas</h5>
+
+<ol class="ol-sin-romanos">
+  <li>Datos almacenados en Tablas</li>
+  <li>Consultas con la sentencia SELECT</li>
+  <li>Gran flexibilidad en consultas de metados</li>
+  <li>Facilita la migración desde otras Bases de Datos</li>
+</ol>
+
+
+<h5>Ver Bases de Datos almacenadas en el Servidor</h5>
+
+<p class="parrafo-normal blue">SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">SCHEMA_NAME</span>: Columna</li>
+  <li><span class="purple">INFORMATION_SCHEMA</span>: Base de Datos</li>
+  <li><span class="purple">SCHEMATA</span>: Tabla</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/diccionario/1-bases-datos.png">
+</div>
+
+<p class="parrafo-normal margen-superior-interior">Esto equivale a la orden: <span class="blue">SHOW DATABASES;</span></p>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 50 ---------------->
+
+
+<h1>Estructura del Diccionario de Datos</h1>
+
+
+<h5 class="margen-superior-interior">Ver Todas las Tablas y Columnas de INFORMATION_SCHEMA</h5>
+
+<p class="parrafo-normal blue">SHOW TABLES FROM INFORMATION_SCHEMA;</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/diccionario/2-tablas-information_schema.png">
+</div>
+
+
+<p class="parrafo-normal green margen-superior-interior">Ejemplo Mostrar Tablas de una Base de Datos: <span class="blue">SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = "asxbd";</span></p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">*</span>: Columna (Todas)</li>
+  <li><span class="purple">INFORMATION_SCHEMA</span>: Base de Datos</li>
+  <li><span class="purple">TABLES</span>: Tabla</li>
+  <li><span class="purple">TABLE_SCHEMA</span>: Columna (asxbd)</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/diccionario/3-ejemplo-1.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 51 ---------------->
+
+
+<h1>Estructura del Diccionario de Datos</h1>
+
+
+<p class="parrafo-normal green margen-superior-interior">Ejemplo Mostrar Columnas de una Tabla de una Base de Datos: <span class="blue">SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = "asxbd";</span></p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">*</span>: Columna (Todas)</li>
+  <li><span class="purple">INFORMATION_SCHEMA</span>: Base de Datos</li>
+  <li><span class="purple">COLUMNS</span>: Tabla</li>
+  <li><span class="purple">TABLE_NAME</span>: Columna (clientes)</li>
+</ol>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/diccionario/4-ejemplo-2.png">
+</div>
+
+
+<h5>Relaciones de Equivalencia más destacadas: SHOW - INFORMATION_SCHEMA</h5>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/diccionario/5-relacion-equivalencia.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 52 ---------------->
+
+
+<h1 id="ficheroslog">Ficheros Log</h1>
+
+<p class="parrafo-primero">Por defecto todos los Ficheros de Registro (Log) se almacenan en el directorio Data. Esta ruta se puede modificar tanto en el Fichero de Configuración ("my.ini" en Windows y "my.cnf" en Linux), como en la Línea de Comandos.</p>
+
+<p class="parrafo-normal">La opcion más recomendable es realizarlo a través del Fichero de Configuración, pero si se hace desde la Línea de Comandos hay que tener en cuenta que esto sólo estará permitido si el Servidor MySQL no está instalado como servicio del Sistema Operativo desde MySQL Installer.</p>
+
+
+<h5>Opciones de Configuración</h5>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Activar Registro de Consultas</span>: <span class="brown">general_log=1</span></li>
+  <li><span class="purple">Registro de Consultas</span>: <span class="brown">general_log_file="ruta"</span></li>
+  <li><span class="purple">Activar Registro Consultas Lentas</span>: <span class="brown">slow_query_log=1</span></li>
+  <li><span class="purple">Registro Consultas Lentas</span>: <span class="brown">slow_query_log_file="ruta"</span></li>
+  <li><span class="purple">Registro de Errores</span>: <span class="brown">log_error="ruta"</span></li>
+  <li><span class="purple">Registro Binario (Operaciones modificación)</span>: <span class="brown">log-bin="ruta"</span></li>
+</ol>
+
+
+<h5>Formato de los Ficheros Log</h5>
+
+<p class="parrafo-normal">Además, en el Fichero de Configuración podemos activar un el formato corto o resumido asignándole a la opción el valor "1":</p>
+
+<ol class="ol-sin-romanos">
+  <li><span class="purple">Formato Resumido</span>: <span class="brown">log_short_format</span></li>
+  <li><span class="purple">Formato Largo</span>: <span class="brown">log_long_format</span></li>
+</ol>
+
+
+<h5>Limpieza de Contenido de los Ficheros Log</h5>
+
+<p class="parrafo-normal">Cuando se realice algún cambio en las rutas o cuando se desee reiniciar el contenido de los Ficheros Log se recomienda introducir en el Servidor MySQL la orden: <span class="purple">FLUSH LOGS;</span></p>
+
+
+<h5>Recomendaciones</h5>
+
+<ol class="ol-sin-romanos">
+  <li>Activar los Registros y Configurar las Rutas en el Fichero de Configuración</li>
+  <li>Habilitar los Ficheros Log para que se inicien con el Servidor</li>
+  <li>Almacenar los Ficheros Logs en una ruta diferente a la de los Datos</li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 53 ---------------->
+
+
+<h1 id="ficheroslog">Ficheros Log</h1>
+
+
+<h5>Configuración Realizada</h5>
+
+<p class="parrafo-normal">A la hora de realizar la configuración de las nuevas rutas es importante tener en cuenta varias cosas:</p>
+
+<ol class="ol-sin-romanos">
+  <li>Los directorios de las rutas deben estar creados con anterioridad</li>
+  <li>El usuario <span class="green">NT SERVICE\MySQL</span> debe contar con permisos y control total en esos directorios</li>
+</ol>
+
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/logs/configuracion-logs.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+<!---------------- PÁGINA 54 ---------------->
+
+
+<h1 id="documentacion">Documentación de la Instalación</h1>
+
+
+<h5 class="margen-superior-interior">Copia de Seguridad Fichero de Configuración</h5>
+
+<p class="parrafo-normal">Cuando se finalice la configuración, será de gran utilidad realizar una Copia de Seguridad de los Ficheros de Configuración. Se recomienda que esta copia se aloje en otros discos o medios por si se requiere un rescate de esa documentación.</p>
+
+
+<h5>Lista de Valores de las Variables</h5>
+
+<p class="parrafo-normal">Otra buena práctica consistirá en realizar una extracción de los valores de las variables (de sesión y globales) que utiliza el Servidor MySQL.</p>
+
+<div class="imagenes margen-superior-interior">
+  <img src="img/docs/extraccion-variables.png">
+</div>
+
+
+<h5 class="margen-superior-interior">Enlaces de Documentación Configuración</h5>
+
+
+<ol class="ol-sin-romanos margen-superior-interior">
+  <li class="purple"><a href="documentos-backup/my.ini" target="_blank">Copia de Seguridad de la Configuración</a></li>
+  <li class="purple"><a href="documentos-backup/listado-valores-variables-mysql.txt" target="_blank">Listado Valores de Sesión de las Variables</a></li>
+  <li class="purple"><a href="documentos-backup/listado-valores-globales-variables-mysql.txt" target="_blank">Listado Valores Globales de las Variables</a></li>
+</ol>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+
+<!---------------- PÁGINA 55 ---------------->
+
+
+<h1 id="resumen">Resumen Variables más Importantes</h1>
+
+<div class="imagenes margen-superior">
+  <img src="img/variables/resumen-variables.png">
+</div>
+
+
+<!-- Salto de Página -->
+<div style="page-break-after: always;"></div>
+
+
+
+<!---------------- PÁGINA 56 ---------------->
+
+
+<h1 id="usuarios">Consulta de Usuarios y Privilegios</h1>
+
+<div class="imagenes margen-superior">
+  <img src="img/usuarios/usuarios-privilegios.png">
+</div>

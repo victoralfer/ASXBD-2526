@@ -76,22 +76,22 @@ a {
 /* ----- Lista del Índice ----- */
 ul, .indice {
 	list-style: decimal;
-	padding: 10px 40px 5px 40px;
+	padding: 20px 40px 5px 40px;
 	font-size: 20px;
 }
 
 	/* Elementos Lista del Índice */
-	ul li {
+	ul li, .indice li {
 		padding: 5px;
 		color: darkblue;
 	}
 
-		ul li ul {
+		ul li ul, .indice li ul {
 			padding-top: 3px;
 		}
 
 			/* Subelementos Lista del Índice */
-			ul li li {
+			ul li li, .indice li li {
 				list-style: square;
 				padding: 5px;
 				font-style: italic;
@@ -99,7 +99,7 @@ ul, .indice {
 			}
 
 				/* Subelementos (2) Lista del Índice */
-				ul li li li {
+				ul li li li, .indice li li li {
 					list-style: circle;
 					padding: 5px 5px 0 5px;
 					font-style: italic;
@@ -150,11 +150,18 @@ h4 {
 h5 {
 	display: block;
 	margin: 0;
-	padding: 10px 20px;
-	font-size: 20px;
+	padding: 18px 20px 5px 20px;
+	font-size: 22px;
 	font-weight: bold;
 	font-style: italic;
+	color: darkgreen;
 }
+
+
+	.h5-especial {
+		font-size: 23px;
+		color: darkblue;
+	}
 
 
 
@@ -206,6 +213,7 @@ ol {
 }
 
 
+
 /* Lista Ordenada PADDING-MARGEN especial (sin romanos) */
 .ol-sin-romanos {
     list-style: square;
@@ -213,7 +221,7 @@ ol {
     padding: 0 50px;
     font-size: 20px;
     font-weight: bold;
-    color: black; /* Forzamos que el nivel 1 no sea azul */
+    color: black;
 }
 
 	/* Elementos Lista Ordenada (Nivel 1: I, II, III) */
@@ -235,6 +243,55 @@ ol {
 			    color: black;
 			    list-style-type: circle;
 			}
+
+
+/* Lista Ordenada PADDING-MARGEN especial (con decimales) */
+.ol-numerico {
+	margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+	.ol-numerico li {
+		list-style-type: decimal !important;
+		padding: 5px 10px;
+	}
+
+
+
+/* Lista Ordenada PADDING-MARGEN especial (sin numeracion) */
+.ol-sin-numero {
+	margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+	.ol-sin-numero li {
+		list-style-type: none;
+		padding: 5px 10px;
+	}
+
+
+
+
+
+
+.ol-circle {
+	margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+	.ol-circle li {
+		list-style-type: circle !important;
+		padding: 5px;
+	}
 
 
 
@@ -328,6 +385,12 @@ footer {
 	color: brown;
 	font-style: italic;
 }
+
+
+.darkblue {
+	color: darkblue;
+}
+
 
 .subrayado {
 	text-decoration: underline;
