@@ -1,0 +1,1 @@
+SELECT * FROM asxbd.pedidos WHERE total > 600;

@@ -1,0 +1,6 @@
+Elena,Vázquez Castro,elena@example.com,644111222
+Roberto,Sanz Peña,roberto@example.com,655222333
+Lucía,Méndez Oro,lucia@example.com,666333444
+Andrés,Gila Port,andres@example.com,677444555
+Nuria,Díaz Sol,nuria@example.com,688555666
+Javier,Ponce De León,javier@example.com,699666777
